@@ -41,10 +41,55 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="WqZ-Rh-qdj" kind="relationship" relationship="rootViewController" id="wv8-70-mUM"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5h6-w5-08S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756" y="4"/>
+        </scene>
+        <!--Table View-->
+        <scene sceneID="c2U-6y-HXa">
+            <objects>
+                <viewController id="WqZ-Rh-qdj" customClass="TableView" customModule="ProjectWifhGithub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GKo-FN-0NZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CPq-JY-DGh">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.93347537879999998" green="0.81882804740000004" blue="0.73097023549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOne" rowHeight="239" id="mjp-Oy-tPd">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="239"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mjp-Oy-tPd" id="p2l-BT-btq">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="239"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93347537879999998" green="0.81882804740000004" blue="0.73097023549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6dv-SI-1RW"/>
+                        <color key="backgroundColor" red="0.93347537879999998" green="0.81882804740000004" blue="0.73097023549999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6dv-SI-1RW" firstAttribute="bottom" secondItem="CPq-JY-DGh" secondAttribute="bottom" id="1UJ-h5-Umk"/>
+                            <constraint firstItem="CPq-JY-DGh" firstAttribute="top" secondItem="6dv-SI-1RW" secondAttribute="top" id="OR3-VW-JRK"/>
+                            <constraint firstItem="CPq-JY-DGh" firstAttribute="leading" secondItem="6dv-SI-1RW" secondAttribute="leading" id="inf-QE-Kzw"/>
+                            <constraint firstItem="6dv-SI-1RW" firstAttribute="trailing" secondItem="CPq-JY-DGh" secondAttribute="trailing" id="jZn-wu-kh8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MVM-I9-pYZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="CPq-JY-DGh" id="hlY-FM-6KP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y79-ES-D24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449.6183206106869" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
