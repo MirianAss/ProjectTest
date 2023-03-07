@@ -11,6 +11,20 @@ class TableView: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var brandOne = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandTwo = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandThree = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandFour = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandFive = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandSix = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandSeven = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    
+    var arrayBrands: [LuxuryBrands] = []
+    
+    func luxury() {
+        arrayBrands = [brandOne, brandTwo, brandThree, brandFour, brandFive, brandSix, brandSeven]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
