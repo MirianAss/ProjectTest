@@ -11,36 +11,28 @@ class TableView: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var brandOne = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandTwo = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandThree = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandFour = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandFive = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandSix = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
-    var brandSeven = LuxuryBrands(imageOne: "", imageTwo: "", title: "", text: "")
+    var brandOne = LuxuryBrands(imageOne: "louis vuitton", imageTwo: "", title: "Louis Vuitton", text: "")
+    var brandTwo = LuxuryBrands(imageOne: "gucci", imageTwo: "", title: "Gucci", text: "")
+    var brandThree = LuxuryBrands(imageOne: "Chanel", imageTwo: "", title: "Chanel", text: "")
+    var brandFour = LuxuryBrands(imageOne: "hermes", imageTwo: "", title: "Hermès", text: "")
+    var brandFive = LuxuryBrands(imageOne: "cartier", imageTwo: "", title: "Cartier", text: "")
+    var brandSix = LuxuryBrands(imageOne: "dior", imageTwo: "", title: "Dior", text: "")
     
     var arrayBrands: [LuxuryBrands] = []
     
     func luxury() {
-        arrayBrands = [brandOne, brandTwo, brandThree, brandFour, brandFive, brandSix, brandSeven]
+        arrayBrands = [brandOne, brandTwo, brandThree, brandFour, brandFive, brandSix]
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        luxury()
+        tableView.delegate = self
+        tableView.dataSource = self
+        let uiNib = UINib(nibName: "CustomCellXib", bundle: nil)
+        tableView.register(uiNib, forCellReuseIdentifier: "cellTwo")
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 extension TableView: UITableViewDataSource {
@@ -59,4 +51,13 @@ extension TableView: UITableViewDataSource {
         return UITableViewCell()
     }
 }
-
+extension TableView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let screen = storyboard?.instantiateViewController(withIdentifier: "screenOne") as? ScreenOneViewController {
+            
+            screen.screenOne = arrayBrands[indexPath.row]
+            
+            self.navigationController?.pushViewController(screen, animated: true)
+        }
+    }
+}

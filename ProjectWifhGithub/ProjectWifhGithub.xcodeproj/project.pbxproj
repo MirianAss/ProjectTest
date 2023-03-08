@@ -17,6 +17,7 @@
 		3A1E8DAE29B7A3FF00464FC8 /* LuxuryBrands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E8DAD29B7A3FF00464FC8 /* LuxuryBrands.swift */; };
 		3A1E8DB129B7AAF400464FC8 /* CustomCellXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E8DAF29B7AAF400464FC8 /* CustomCellXib.swift */; };
 		3A1E8DB229B7AAF400464FC8 /* CustomCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E8DB029B7AAF400464FC8 /* CustomCellXib.xib */; };
+		3A1E8DB429B811F100464FC8 /* ScreenOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1E8DB329B811F100464FC8 /* ScreenOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3A1E8DAD29B7A3FF00464FC8 /* LuxuryBrands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuxuryBrands.swift; sourceTree = "<group>"; };
 		3A1E8DAF29B7AAF400464FC8 /* CustomCellXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellXib.swift; sourceTree = "<group>"; };
 		3A1E8DB029B7AAF400464FC8 /* CustomCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellXib.xib; sourceTree = "<group>"; };
+		3A1E8DB329B811F100464FC8 /* ScreenOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				3A1E8D9929B7905100464FC8 /* SceneDelegate.swift */,
 				3A1E8D9B29B7905100464FC8 /* ViewController.swift */,
 				3A1E8D9D29B7905100464FC8 /* Main.storyboard */,
+				3A1E8DB329B811F100464FC8 /* ScreenOneViewController.swift */,
 				3A1E8DAF29B7AAF400464FC8 /* CustomCellXib.swift */,
 				3A1E8DB029B7AAF400464FC8 /* CustomCellXib.xib */,
 				3A1E8DAD29B7A3FF00464FC8 /* LuxuryBrands.swift */,
@@ -154,6 +157,7 @@
 				3A1E8D9C29B7905100464FC8 /* ViewController.swift in Sources */,
 				3A1E8DAC29B7998C00464FC8 /* TableView.swift in Sources */,
 				3A1E8DB129B7AAF400464FC8 /* CustomCellXib.swift in Sources */,
+				3A1E8DB429B811F100464FC8 /* ScreenOneViewController.swift in Sources */,
 				3A1E8D9829B7905100464FC8 /* AppDelegate.swift in Sources */,
 				3A1E8DAE29B7A3FF00464FC8 /* LuxuryBrands.swift in Sources */,
 				3A1E8D9A29B7905100464FC8 /* SceneDelegate.swift in Sources */,

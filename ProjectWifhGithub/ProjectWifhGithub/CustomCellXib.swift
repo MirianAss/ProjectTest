@@ -9,7 +9,6 @@ import UIKit
 
 class CustomCellXib: UITableViewCell {
 
-    @IBOutlet weak var lblTextXib: UILabel!
     @IBOutlet weak var imageXib: UIImageView!
     
     override func awakeFromNib() {
@@ -23,7 +22,6 @@ class CustomCellXib: UITableViewCell {
         // Configure the view for the selected state
     }
     func setupLuxuryBrands(luxury: LuxuryBrands) {
-        lblTextXib.text = luxury.title
         imageXib.image = UIImage(named: luxury.imageOne)
     }
 }
