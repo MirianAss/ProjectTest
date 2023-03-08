@@ -16,13 +16,13 @@ class ScreenOneViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    @IBAction func btAdvance(_ sender: Any) {
+        
+        lblScreenOne.text = screenOne.text
+        imageScreenOne.image = UIImage(named: screenOne.imageTwo)
     }
     
     @IBAction func btBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
