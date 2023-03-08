@@ -43,3 +43,20 @@ class TableView: UIViewController {
     */
 
 }
+extension TableView: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        arrayBrands.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cellTwo", for: indexPath) as? CustomCellXib {
+            
+            cell.setupLuxuryBrands(luxury: arrayBrands[indexPath.row])
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+    }
+}
+

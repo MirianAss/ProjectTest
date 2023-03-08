@@ -22,5 +22,8 @@ class CustomCellXib: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    func setupLuxuryBrands(luxury: LuxuryBrands) {
+        lblTextXib.text = luxury.title
+        imageXib.image = UIImage(named: luxury.imageOne)
+    }
 }
